@@ -1,0 +1,32 @@
+#include <windows.h>
+ 
+1 VERSIONINFO
+FILEVERSION        0,1,0,94
+PRODUCTVERSION     0,1,0,94
+FILEFLAGSMASK      VS_FFI_FILEFLAGSMASK
+FILEFLAGS          0    
+FILETYPE           VFT_APP
+{
+    BLOCK "StringFileInfo"
+    {
+        BLOCK "040904B0"
+        {
+            VALUE L"CompanyName", L"TRIM CORE SOFTWARE s.r.o."
+            VALUE L"ProductName", L"Lamp"
+            VALUE L"ProductVersion", L"0.1"
+            VALUE L"ProductDescription", L"Lamp lights up all monitors"
+            VALUE L"FileVersion", L"0.1.0.94"
+            VALUE L"FileDescription", L"Lamp Application"
+            VALUE L"InternalName", L"LampOfScreensApp"
+            VALUE L"OriginalFilename", L"Lamp.exe"
+            VALUE L"LegalCopyright", L"\x00a9 2022 TRIM CORE SOFTWARE s.r.o."
+            VALUE L"URL", L"http://www.trimcore.cz"
+        }
+    }
+    BLOCK "VarFileInfo"
+    {
+        VALUE "Translation", 0x0409, 1200
+    }
+}
+ 
+1 24 L"D:\\Projekty\\Lamp\\\\LampOfScreensApp.manifest"
