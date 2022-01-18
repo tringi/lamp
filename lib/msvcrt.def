@@ -1,0 +1,3 @@
+EXPORTS 
+	_snwprintf
+	memset

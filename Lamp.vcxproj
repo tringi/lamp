@@ -141,11 +141,14 @@
       <MinimumRequiredVersion>6.0</MinimumRequiredVersion>
       <LargeAddressAware>true</LargeAddressAware>
       <EntryPointSymbol>Lamp</EntryPointSymbol>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;advapi32.lib;comctl32.lib;shell32.lib;uuid.lib;lib\$(Platform)\msvcrt.lib;chkstk.obj;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;advapi32.lib;comctl32.lib;shell32.lib;uuid.lib;lib\msvcrt.lib;chkstk.obj;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PreBuildEvent>
       <Command>"$(SolutionDir)tools\rsrcgen.exe" "$(ProjectDir)$(AssemblyName).info" "dir=$(ProjectDir)\" debug=$(UseDebugLibraries) platform=$(ProcessorArchitecture) targetfilename=$(TargetFileName)</Command>
     </PreBuildEvent>
+    <PreLinkEvent>
+      <Command>lib.exe /nologo /MACHINE:$(PlatformTarget) /def:lib/msvcrt.def /out:lib/msvcrt.lib</Command>
+    </PreLinkEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -183,11 +186,14 @@
       <RandomizedBaseAddress>false</RandomizedBaseAddress>
       <MergeSections>.rdata=.text</MergeSections>
       <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;advapi32.lib;comctl32.lib;shell32.lib;uuid.lib;lib\$(Platform)\msvcrt.lib;chkstk.obj;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;advapi32.lib;comctl32.lib;shell32.lib;uuid.lib;lib\msvcrt.lib;chkstk.obj;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PreBuildEvent>
       <Command>"$(SolutionDir)tools\rsrcgen.exe" "$(ProjectDir)$(AssemblyName).info" "dir=$(ProjectDir)\" debug=$(UseDebugLibraries) platform=$(ProcessorArchitecture) targetfilename=$(TargetFileName)</Command>
     </PreBuildEvent>
+    <PreLinkEvent>
+      <Command>lib.exe /nologo /MACHINE:$(PlatformTarget) /def:lib/msvcrt.def /out:lib/msvcrt.lib</Command>
+    </PreLinkEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -202,11 +208,14 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <MinimumRequiredVersion>6.0</MinimumRequiredVersion>
       <EntryPointSymbol>Lamp</EntryPointSymbol>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;advapi32.lib;comctl32.lib;shell32.lib;uuid.lib;lib\$(Platform)\msvcrt.lib;chkstk.obj;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;advapi32.lib;comctl32.lib;shell32.lib;uuid.lib;lib\msvcrt.lib;chkstk.obj;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PreBuildEvent>
       <Command>"$(SolutionDir)tools\rsrcgen.exe" "$(ProjectDir)$(AssemblyName).info" "dir=$(ProjectDir)\" debug=$(UseDebugLibraries) platform=$(ProcessorArchitecture) targetfilename=$(TargetFileName)</Command>
     </PreBuildEvent>
+    <PreLinkEvent>
+      <Command>lib.exe /nologo /MACHINE:$(PlatformTarget) /def:lib/msvcrt.def /out:lib/msvcrt.lib</Command>
+    </PreLinkEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
     <ClCompile>
@@ -222,11 +231,14 @@
       <MinimumRequiredVersion>
       </MinimumRequiredVersion>
       <EntryPointSymbol>Lamp</EntryPointSymbol>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;advapi32.lib;comctl32.lib;shell32.lib;uuid.lib;lib\$(Platform)\msvcrt.lib;chkstk.obj;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;advapi32.lib;comctl32.lib;shell32.lib;uuid.lib;lib\msvcrt.lib;chkstk.obj;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PreBuildEvent>
       <Command>"$(SolutionDir)tools\rsrcgen.exe" "$(ProjectDir)$(AssemblyName).info" "dir=$(ProjectDir)\" debug=$(UseDebugLibraries) platform=$(ProcessorArchitecture) targetfilename=$(TargetFileName)</Command>
     </PreBuildEvent>
+    <PreLinkEvent>
+      <Command>lib.exe /nologo /MACHINE:$(PlatformTarget) /def:lib/msvcrt.def /out:lib/msvcrt.lib</Command>
+    </PreLinkEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -263,11 +275,14 @@
       <RandomizedBaseAddress>false</RandomizedBaseAddress>
       <MergeSections>.rdata=.text</MergeSections>
       <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;advapi32.lib;comctl32.lib;shell32.lib;uuid.lib;lib\$(Platform)\msvcrt.lib;chkstk.obj;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;advapi32.lib;comctl32.lib;shell32.lib;uuid.lib;lib\msvcrt.lib;chkstk.obj;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PreBuildEvent>
       <Command>"$(SolutionDir)tools\rsrcgen.exe" "$(ProjectDir)$(AssemblyName).info" "dir=$(ProjectDir)\" debug=$(UseDebugLibraries) platform=$(ProcessorArchitecture) targetfilename=$(TargetFileName)</Command>
     </PreBuildEvent>
+    <PreLinkEvent>
+      <Command>lib.exe /nologo /MACHINE:$(PlatformTarget) /def:lib/msvcrt.def /out:lib/msvcrt.lib</Command>
+    </PreLinkEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
     <ClCompile>
@@ -305,11 +320,14 @@
       <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
       <MergeSections>.rdata=.text</MergeSections>
       <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;advapi32.lib;comctl32.lib;shell32.lib;uuid.lib;lib\$(Platform)\msvcrt.lib;chkstk.obj;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;advapi32.lib;comctl32.lib;shell32.lib;uuid.lib;lib\msvcrt.lib;chkstk.obj;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PreBuildEvent>
       <Command>"$(SolutionDir)tools\rsrcgen.exe" "$(ProjectDir)$(AssemblyName).info" "dir=$(ProjectDir)\" debug=$(UseDebugLibraries) platform=$(ProcessorArchitecture) targetfilename=$(TargetFileName)</Command>
     </PreBuildEvent>
+    <PreLinkEvent>
+      <Command>lib.exe /nologo /MACHINE:$(PlatformTarget) /def:lib/msvcrt.def /out:lib/msvcrt.lib</Command>
+    </PreLinkEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Lamp.cpp" />
