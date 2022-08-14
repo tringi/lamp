@@ -173,7 +173,7 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>false</GenerateDebugInformation>
-      <AdditionalOptions>/STUB:tools\stub.exe  /EMITPOGOPHASEINFO %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions>/STUB:tools\stub.exe  /EMITPOGOPHASEINFO /EMITTOOLVERSIONINFO:NO %(AdditionalOptions)</AdditionalOptions>
       <ProgramDatabaseFile />
       <StripPrivateSymbols>strip.pdb</StripPrivateSymbols>
       <MinimumRequiredVersion>6.0</MinimumRequiredVersion>
@@ -263,7 +263,7 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>false</GenerateDebugInformation>
-      <AdditionalOptions>/STUB:tools\stub.exe  /EMITPOGOPHASEINFO %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions>/STUB:tools\stub.exe  /EMITPOGOPHASEINFO /EMITTOOLVERSIONINFO:NO %(AdditionalOptions)</AdditionalOptions>
       <ProgramDatabaseFile />
       <StripPrivateSymbols>strip.pdb</StripPrivateSymbols>
       <MinimumRequiredVersion>6.0</MinimumRequiredVersion>
@@ -307,7 +307,7 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>false</GenerateDebugInformation>
-      <AdditionalOptions>/STUB:tools\stub.exe  /EMITPOGOPHASEINFO %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions>/STUB:tools\stub.exe  /EMITPOGOPHASEINFO /EMITTOOLVERSIONINFO:NO %(AdditionalOptions)</AdditionalOptions>
       <ProgramDatabaseFile>
       </ProgramDatabaseFile>
       <StripPrivateSymbols>strip.pdb</StripPrivateSymbols>

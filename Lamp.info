@@ -1,6 +1,9 @@
 [generator]
 	autoincrement	= true
 
+	manifestcharset	= UTF-8
+	versioncharset	= UTF-8
+
 [description]
 	product 		= Lamp
 	productdescription	= Lamp lights up all monitors
@@ -11,8 +14,8 @@
 
 	major = 0
 	minor = 1
-	patch = 0
-	build = 100
+	patch = 1
+	build = 126
 
 [versioninfo]
 	filename	= %dir%\%internalname%-vi.rc
@@ -52,7 +55,7 @@
 	requestedExecutionLevel	= asInvoker
 	dpiAware	= True/PM
 	dpiAwareness	= PerMonitorV2,PerMonitor
-	longPathAware	= True
+;	longPathAware	= True
 
 	supportedOS:1	= e2011457-1546-43c5-a5fe-008deee3d3f0 Windows Vista/Server 2008
 	supportedOS:2	= 35138b9a-5d96-4fbd-8e2d-a2440225f93a Windows 7/Server 2008 R2

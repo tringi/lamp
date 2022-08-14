@@ -14,13 +14,13 @@
 
 HKEY data = NULL;       // TBD: custom colors
 HKEY settings = NULL;   // options
+HMENU menu = NULL;
 
 ATOM ctrl; // control window atom
 ATOM lamp; // lamp window atom
 
-HMENU menu = NULL;
-UINT WM_Terminate = WM_NULL;
-UINT WM_TaskbarCreated = WM_NULL;
+USHORT WM_Terminate = WM_NULL;
+USHORT WM_TaskbarCreated = WM_NULL;
 
 #define MAX_NAME_LENGTH 16384 // registry documentation
 #define MAX_ENTRIES 0x1000
